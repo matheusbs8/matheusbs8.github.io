@@ -1,0 +1,286 @@
+@font-face {
+    font-family: montserrat-thin;
+    src: url(../_fonts/Montserrat-Thin.ttf)
+}
+
+@font-face {
+    font-family: montserrat-reg;
+    src: url(../_fonts/Montserrat-Regular.ttf)
+}
+
+@font-face {
+    font-family: montserrat-bold;
+    src: url(../_fonts/Montserrat-Bold.ttf)
+}
+
+
+
+
+body {
+    background-color: #fffaff;
+}
+
+table {
+    font-family: montserrat-reg;
+    width: 80%;
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+    border-color: #000;
+    border-width: 1px;
+}
+
+th {
+    font-weight: 700;
+}
+
+td,
+th {
+    border: 1px solid #000;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0, 147, 148, 0.5);
+
+}
+
+.principal {
+    width: 100%;
+    height: 100vh;
+    min-height: 550px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal-text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-family: montserrat-bold, sans-serif;
+    font-weight: bolder;
+    color: white;
+    background-color: rgba(0, 34, 47, 1);
+}
+
+.principal-image {
+    filter: saturate(5);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: url("../_imagens/tartaruga.jpg");
+    background-position: left center;
+    background-size: cover;
+    font-weight: bolder;
+    color: white;
+}
+
+.backgroud-black {
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ajudar {
+    padding: 15px 10px;
+    background-color: rgba(0, 34, 47, 1);
+    ;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #fff;
+    font-family: montserrat-reg;
+}
+
+.principal-text h1 {
+    text-align: center;
+    font-size: 4em;
+    text-shadow: 10px 10px 20px black;
+    margin-left: 8%;
+}
+
+.principal-text p {
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.5;
+    width: 70%;
+    margin-left: 8%;
+    font-family: montserrat-reg, sans-serif;
+}
+
+.principal-text a {
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    color: rgba(0, 14, 37, 1);
+    border-radius: 40px;
+    transition: 1s transform;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 8%;
+}
+
+.principal-text a:hover {
+    transform: scale(1.2);
+}
+
+.informativo {
+    width: 100%;
+    height: 85vh;
+
+}
+
+.row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.column {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.coluna-imagem {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+li {
+    margin-top: 13%;
+}
+
+ul {
+    list-style-type: circle;
+    font-family: montserrat-reg, sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-left: 3%;
+}
+
+
+
+.coluna-video {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.coluna-video video {
+
+    border-radius: 40px;
+    width: 80%;
+    height: 100%;
+}
+
+.coluna-video div {
+    width: 320;
+    height: 240;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.coluna-texto {
+    width: 40%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 3%;
+    text-align: justify;
+}
+
+
+
+.informativo h2 {
+    font-family: montserrat-reg, sans-serif;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.coluna-texto p {
+    font-family: montserrat-reg, sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.background-tartaruga {
+    background: url("../_imagens/tartaruga3.jpg");
+    background-position: left center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 40vh;
+    width: 100%;
+}
+
+.coluna-imagem img {
+    position: absolute;
+    left: 5px;
+    width: 200px;
+    height: 350px;
+    filter: saturate(1.2);
+    transition: 1s transform;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(0, 34, 47, 1)
+}
+
+
+
+.copyright {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: montserrat-reg, sans-serif;
+}
+
+.agradecimento {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: montserrat-reg, sans-serif;
+}
