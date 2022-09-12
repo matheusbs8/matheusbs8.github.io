@@ -39,6 +39,7 @@ th {
     border: 1px solid #000;
     text-align: left;
     padding: 8px;
+    height: auto;
 }
 
 tr:nth-child(even) {
