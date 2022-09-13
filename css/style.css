@@ -349,7 +349,11 @@ footer {
 th {
     font-weight: 700;
 }
-
+.coluna-video video{
+    border-radius: 40px;
+    width: 100%;
+    height: 100%;    
+    }
 td,
 th {
     border: 1px solid #000;
