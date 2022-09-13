@@ -345,7 +345,10 @@ footer {
     font-size: 10px;
     margin: 10px;
 }
-
+.principal-text h1{
+    text-align:left;
+    font-size:2.5em;
+    }
 th {
     font-weight: 700;
 }
