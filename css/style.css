@@ -334,6 +334,10 @@ footer {
   .informativo{
     min-height: 750px;
   }
+    #section-table{
+    min-height:900px;
+    }
+    
   table {
     font-family: montserrat-reg;
     width: 95%;
