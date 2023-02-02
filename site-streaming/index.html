@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Zoetrope</title>
+        <meta charset="utf-8">
+        <meta name="viewport">
+        <link href="_css/reset.css" rel="stylesheet">
+        <link href="_css/style.css" rel="stylesheet">
+        <style>
+            .logo{
+                width: 25%;   
+            }
+            .principal{
+                background: url("_imagens/banner-principal.jpg");
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                height: 100vh;  
+                min-height: 550px;  
+            }
+
+            .principal section{
+               
+            }
+
+            .principal-text{
+                width: 90%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                padding-left: 20px;
+                font-weight: bolder;
+               
+                color:white;
+            }
+
+            .principal-text p{
+                font-size: 4em;
+            }
+
+            .principal-text a{
+                font-size: 2em;
+                text-decoration: none;
+                padding: 20px;
+                background: #8C2E2E;
+                color: #fff;
+                border-radius: 20px;
+                transition: 1s transform;
+            }
+
+            .principal-text a:hover{
+                transform: translate(0px, 20px);
+            }
+
+            .container{
+                position: absolute; 
+                width: 100%;
+                padding-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1><img src="_imagens/logo-zoetrope.png" class="logo" /></h1>
+        </div>
+        <main>
+            <section class="principal">
+                <section class="principal-text">
+                    <p>Tudo sobre os  filmes<br> clássicos, lançamentos<br> e muito mais.</p><br>
+                    <a href="#g" style="">Saiba mais</a>
+                </section>
+            </section>
+            
+        </main>
+
+    </body>
+</html>
