@@ -2,78 +2,75 @@
 <html lang="pt-br">
     <head>
         <title>Zoetrope</title>
-        <meta charset="utf-8">
-        <meta name="viewport">
+        <meta name="viewport" content="width=device-width" />
+        <link rel="sortcut icon" href="_imagens/logo-topo-aba.png" type="image/gif" />
         <link href="_css/reset.css" rel="stylesheet">
         <link href="_css/style.css" rel="stylesheet">
-        <style>
-            .logo{
-                width: 25%;   
-            }
-            .principal{
-                background: url("_imagens/banner-principal.jpg");
-                background-position: center;
-                background-size: cover;
-                width: 100%;
-                height: 100vh;  
-                min-height: 550px;  
-            }
-
-            .principal section{
-               
-            }
-
-            .principal-text{
-                width: 90%;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: center;
-                padding-left: 20px;
-                font-weight: bolder;
-               
-                color:white;
-            }
-
-            .principal-text p{
-                font-size: 4em;
-            }
-
-            .principal-text a{
-                font-size: 2em;
-                text-decoration: none;
-                padding: 20px;
-                background: #8C2E2E;
-                color: #fff;
-                border-radius: 20px;
-                transition: 1s transform;
-            }
-
-            .principal-text a:hover{
-                transform: translate(0px, 20px);
-            }
-
-            .container{
-                position: absolute; 
-                width: 100%;
-                padding-top: 10px;
-            }
-        </style>
+       
     </head>
     <body>
+        <header>
         <div class="container">
-            <h1><img src="_imagens/logo-zoetrope.png" class="logo" /></h1>
+            <h1><img src="_imagens/logo-zoetrope.png" class="logo" alt="logo zoetrope"/></h1>
         </div>
+        </header>
         <main>
-            <section class="principal">
+            <section class="principal" >
                 <section class="principal-text">
                     <p>Tudo sobre os  filmes<br> clássicos, lançamentos<br> e muito mais.</p><br>
-                    <a href="#g" style="">Saiba mais</a>
+                    <a href="#segundo-frame">Saiba mais</a>
                 </section>
             </section>
-            
+            <section id="segundo-frame" class="informativo">
+                <section class="row" >
+                    <div class="coluna-telefones"> 
+                        <img id="telefone1" src="_imagens/tela-home-cel.png" alt="tela de inicio do aplicativo zoetrope"/>
+                        <img id="telefone2" src="_imagens/tela-info-cel.png"  alt="tela de informacao de filme do aplicativo zoetrope"/>
+                        <img id="telefone3" src="_imagens/tela-inicio-cel.png"  alt="tela de home do aplicativo zoetrope"/>           
+                    </div>
+                    <div class="coluna-texto">
+                        <h2>O cinema na palma da sua mão</h2>
+                        <br>
+                        <p>O zoetrope traz as principais informações
+                            dos seus filmes favoritos. Além 
+                            de poder interagir com outros 
+                            amantes da sétima arte.</p>
+                    </div>
+                </section>
+                <section class="row" >
+                    <div class="coluna-texto"> 
+                        <h2>Trailes, novidades e se quiser até spoilers</h2>
+                        <br>
+                        <p>Nosso aplicativo deixa você antenado, trazendo em 
+                            primeira mão os trailers com análise.</p>
+                        
+                    </div>
+                    <div class="coluna-video">
+                        <video loop autoplay muted alt="video trailer do filme shang-chi">
+                            <source src="_videos/trailer-shang.mp4" type="video/mp4">
+                            <source src="_videos/trailer-shang.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </section>
+                <section class="row" >
+                    <div class="coluna-telas"> 
+                        <img id="multi-telas" src="_imagens/multi-telas.png" alt="imagem de multi-telas do aplicativo zoetrope"/>    
+                    </div>
+                    <div class="coluna-texto">
+                        <h2>Em qualquer lugar, em qualquer aparelho</h2>
+                        <br>
+                        <p>Você pode ter acesso ao zoetrope e todas as suas
+                            funcionalidades em vários tipos de aparelhos.</p>
+                    </div>
+                </section>
+            </section> 
         </main>
+        <footer>
+            <img id="logo-footer" src="_imagens/logo-zoetrope.png" />
+            <p class="agradecimento">Feito com &#9825; e suor por Matheus Barroso</p>
+            <p class="copyright">&copy; Copyright Zoetrope - 2021</p>
+        </footer>
 
     </body>
 </html>
