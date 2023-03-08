@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Trabalho 3</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Othello</h1>
+        <div id="inicio" class="row-button">
+            <a onclick="modoJogo()">Jogar</a>
+           <!-- <a>Instruções</a>-->
+        </div>
+
+        <div id="modo" style="display: none;" class="row-button">
+            <a href="tabuleiro.html">Modo 1 x 1</a>
+            <a  href = "maquina.html">Modo maquina</a>
+        </div>
+    </div>
+
+    <footer id="rodape">
+        <p>Desenvolvido por João Mateus e Matheus Barroso</p>
+    </footer>
+
+    <script>
+        function modoJogo(){
+            document.getElementById("inicio").style.display="none";
+            document.getElementById("modo").style.display="flex";
+        }
+    </script>
+</body>
+
+</html>
+

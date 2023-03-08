@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="back-escolher">
+            <div class="escolher">
+                <h1>Escolha a sua peça</h1>
+                <div class="row-peca">
+                    <div class="centralizar" onclick="iniciar(1);">
+                        <div class="peca" style="background-color: white;"></div>
+                        <h3 style="color: white;">Peça Branca</h3>
+                    </div>
+                    <div>
+                        <div class="centralizar" onclick="iniciar(2);">
+                            <div class="peca" style="background-color: black;"></div>
+                            <h3>Peça Preta</h3>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+
+        <div id="back-dificuldade">
+            <div class="escolher">
+                <h1>Escolha a dificuldade</h1>
+                <div class="row-peca">
+                    <div class="centralizar" onclick="escolherDificuldade(1);">
+                        <div class="peca" style="background-color: rgb(43, 167, 43);"></div>
+                        <h3 style="color: white;">fácil</h3>
+                    </div>
+                    
+                        <div class="centralizar" onclick="escolherDificuldade(3);">
+                            <div class="peca" style="background-color: rgb(209, 197, 31);"></div>
+                            <h3 style="color: white;">médio</h3>
+                        </div>
+                    
+                            <div class="centralizar" onclick="escolherDificuldade(5);">
+                                <div class="peca" style="background-color: rgb(167, 43, 43);"></div>
+                                <h3 style="color: white;">difícil</h3>
+                            </div>
+                            
+                        
+                    </div>
+                </div>
+            </div>
+    
+            
+        
+        <div id="tabuleiro">
+        </div>
+
+        <div id="resultado">
+            <h1 id="valor-resultado"></h1>
+            <div id="modo"  class="row-button">
+                <a onclick="window.location.reload()">jogar de novo</a>
+                <a  href = "othello.html">inicio</a>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <script src="js/script_constroi_maquina.js">    
+    </script>
+</body>
+
+</html>
