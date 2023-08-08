@@ -1,0 +1,482 @@
+/* Importa a fonte personalizada */
+@font-face {
+    font-family: "Vt323";
+    /* O nome da fonte que você deseja usar */
+    src: url("../Fonts/VT323-Regular.ttf");
+    /* Formato TrueType Font (TTF) */
+}
+
+body {
+    background-color: #1D1D1F;
+    min-width: 340px;
+}
+
+.main1 {
+    width: 100vw;
+    height: 100vh;
+    min-height: 700px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.container-principal {
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 3;
+    transition: all 3s;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-social-midia {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.midia {
+    color: #787779;
+}
+
+.container-logo {
+    width: 20%;
+    height: 100%;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+main {
+    margin-top: 4%;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+
+
+
+.content {
+    width: 100%;
+    height: 100%;
+
+    display: none;
+}
+
+.active {
+    display: flex;
+}
+
+
+[data-name=corner-top-left] {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    transition: all 2s;
+}
+
+[data-name=corner-bottom-right] {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+    transition: all 2s;
+}
+
+#grad1 stop {
+    stop-color: #f12c06;
+}
+
+#grad2 stop {
+    stop-color: #faed34;
+}
+
+#grad3 stop {
+    stop-color: #ff7f00;
+}
+
+#grad4 stop {
+    stop-color: #ff4500;
+}
+
+#grad5 stop {
+    stop-color: #ff6347;
+}
+
+#grad6 stop {
+    stop-color: #ff8c00;
+}
+
+#grad7 stop {
+    stop-color: #ff3b3f;
+}
+
+#grad8 stop {
+    stop-color: #ff1493;
+}
+
+#grad9 stop {
+    stop-color: #ff69b4;
+}
+
+#grad10 stop {
+    stop-color: #ff00ff;
+}
+
+.tab-bar {
+    width: 100%;
+
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #FFF;
+    font-family: Vt323;
+}
+
+.tab-bar .tab {
+    width: 50%;
+    height: 100%;
+    border: #787779 1px solid;
+    border-left: #787779 0px solid;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: large;
+}
+
+.content-container {
+    width: 100%;
+    height: 90%;
+}
+
+#perfil img {
+    border-radius: 50%;
+
+}
+#imagemTroca{
+    width: 65%;
+}
+
+#perfil h1 {
+    color: #FFF;
+    font-family: Vt323;
+    font-size: x-large;
+}
+
+#perfil .box {
+    width: 80%;
+
+}
+
+#perfil aside p {
+    color: #FFF;
+    font-family: Vt323;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.2;
+}
+
+.habilidades img {
+    width: 42px;
+}
+.habilidades h1 {
+    text-align: center;
+}
+
+#perfil section {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#perfil aside {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#projetos section {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 25px;
+}
+
+#projetos p {
+    color: #FFF;
+    font-family: Vt323;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.2;
+}
+
+#resize{
+    height: 50%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+
+#resize h1{
+    color: #FFF;
+    font-family: Vt323;
+    font-size: 30px;
+}
+
+#button{
+    padding: 15px 30px;
+    border:1px #f12c06 solid;
+    color: #FFF;
+    font-family: Vt323;
+    border-radius: 10px;
+    text-decoration: none;
+    text-shadow: 2px 2px 1px black;
+}
+
+#projetos aside{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 50%;
+}
+
+#listProjetos{
+    /* border: #f12c06 1px solid; */
+    box-shadow: -1px -1px 3px #f12c06;
+    width: 80%;
+}
+#listProjetos div{
+    width: 100%-5px;
+    
+    color: #FFF;
+    font-family: Vt323;
+    border-bottom: #f12c06 1px solid;
+    font-size: 18px;
+    cursor: pointer;
+    transition: justify-content 2s;
+    display: flex;
+    justify-content: flex-start;
+}
+#listProjetos div:last-child{
+    border-bottom: 0px;
+}
+
+#listProjetos p{
+
+    padding: 15px 5px;
+    display: flex;
+        justify-content: flex-start; /* Defina o valor inicial da propriedade */
+        transition: transform 1s;
+}
+
+.item:hover p{
+    transform: translateX(40%);
+} 
+
+#balls{
+    width: 20%;
+    margin-right: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+#balls div{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(100, 100, 100);
+    border-radius: 50%;
+    transition: all 1s;
+    cursor: pointer;
+}
+#balls div:hover{
+    transform: scale(1.2);
+}
+
+#balls div:first-child{
+    background-color: white;
+}
+
+#copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content:flex-end;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    height: 3%;
+}
+
+#copyright p{
+    color: #FFF;
+    font-family: Vt323;
+    font-size: 18px;
+    margin-bottom: 1px;
+    margin-right: 4px;
+
+
+}
+
+@media screen and (max-width: 1000px) {
+    #resize{
+        height: 100%;
+    }
+    #imagemTroca{
+        width: 38%;
+    }
+
+    #perfil .box {
+        width: 95%;
+    
+    }
+    #descri{
+        font-size: 14px;
+    }
+    #perfil{
+        flex-direction: column;
+    }
+    #perfil section{
+        width: 100%;
+        height: 60%;
+   flex-direction: row;
+    }
+    #perfil aside{
+        width: 100%;
+        height: 50%;
+     
+    }
+    #projetos{
+        flex-direction: column;
+    }
+    #projetos section{
+        width: 100%;
+        height: 60%;
+        justify-content: flex-start;
+    }
+    #projetos aside{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #balls{
+        width: 20%;
+        margin-left: 30%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .main1 {
+        /* padding: 10px; */
+    }
+
+  
+
+    .container-logo img {
+        width: 60%;
+    }
+
+    /* header {
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    .container-social-midia {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .container-social-midia a {
+        margin: 5px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section,
+    aside {
+        width: 100%;
+        height: 40%;
+    }
+
+    .container-principal {
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        box-sizing: border-box;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    #perfil aside p {
+        font-size: 14px;
+    }
+    #perfil section{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 20px;
+
+    }
+    .habilidades img{
+        width: 35px;
+    }
+    #resize p{
+        font-size: 12px;
+    }
+}
