@@ -101,7 +101,7 @@ const projects = [
 
 ]
 
-const projectsForPage=3;
+const projectsForPage=2;
 
 let colors = [
     '#f12c06', '#faed34', '#ff7f00', '#ff4500', '#ff6347',
@@ -115,9 +115,27 @@ let gradi = [
 ];
 
 var currentGradientIndex = 0;
-var randomIndex;
+var randomIndex=0;
 
 
+var tabPerfil = document.getElementById('tabPerfil');
+function aaaaa(){
+tabPerfil.onmouseover = function() {
+    tabPerfil.style.boxShadow = '0 0 10px '+ colors[randomIndex] ;
+    tabPerfil.style.border= colors[randomIndex]+' 1px solid';
+    //border-left: #787779 0px solid;
+
+    // Add any other style changes you want when hovering
+};
+}
+tabPerfil.onmouseout = function() {
+    tabPerfil.style.border= '#787779 1px solid';
+    //border-left: #787779 0px solid;
+    tabPerfil.style.boxShadow= '0 0 10px rgba(255, 255, 255, 0.8)';
+};
+
+
+//Retorna o gradiente aleatório
 function getRandomGradient() {
     randomIndex = Math.floor(Math.random() * gradi.length);
     return gradi[randomIndex];
@@ -237,6 +255,10 @@ function fecha() {
 function abre_fecha() {
     // Aplicar os gradientes atuais aos elementos SVG
     var headerGradient = getRandomGradient();
+
+   // aaaaa();
+
+  // tabPerfil.addEventListener('mouseenter', function() {});
 
     document.getElementById('pai').setAttribute('fill', headerGradient);
     document.getElementById('pai2').setAttribute('fill', headerGradient);

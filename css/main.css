@@ -56,6 +56,11 @@ header {
 
 .midia {
     color: #787779;
+    transition: all 1s;
+}
+
+.midia:hover {
+    color: #fff;
 }
 
 .container-logo {
@@ -176,7 +181,10 @@ main {
     align-items: center;
     cursor: pointer;
     font-size: large;
+    transition: all 1s;
 }
+
+
 
 .content-container {
     width: 100%;
@@ -468,6 +476,9 @@ main {
     #perfil aside p {
         font-size: 14px;
     }
+    .container-logo  {
+        width: 40%;
+    }
     #perfil section{
         flex-direction: column;
         justify-content: flex-start;
@@ -479,5 +490,13 @@ main {
     }
     #resize p{
         font-size: 12px;
+    }
+    .container-social-midia {
+        width: 50%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+    .container-social-midia i{
+        width: 50%;
     }
 }
