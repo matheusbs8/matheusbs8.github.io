@@ -47,5 +47,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const element = keys[index];
         let randomColor = Math.floor(Math.random() * colors.length);
         element.style.boxShadow = '0px 0px 8px ' + colors[randomColor]+', '+ '0px 0px 3px #fff';
+        
     }
 });

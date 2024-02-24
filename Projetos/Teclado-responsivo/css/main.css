@@ -4,6 +4,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    min-height: 550px;
     background-color: #1D1D1F;
     
   }
@@ -45,14 +46,37 @@
   
   .key {
     
-    padding: 2% 2.2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
     margin: .5%;
     color: #fff;
     text-align: center;
     cursor: pointer;
   }
+  .backspace img{
+    width: 40%;
+  }
+
+  .enter img{
+    width: 40%;
+  }
+
+  .caps-lock img{
+    width: 40%;
+  }  
+
+  
   
   .key:hover {
-    background-color: #ccc;
+    transform: scale('1.6');
   }
   
+  @media screen and (max-width: 530px) {
+    .key {
+      flex: 1;
+    }
+  
+  }
