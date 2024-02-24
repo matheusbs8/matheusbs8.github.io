@@ -1,6 +1,6 @@
 const projects = [
     {
-        title: 'Projeto 1',
+        title: 'Morphing de Imagens',
         description:`Sed ut perspiciatis unde omnis iste
          natus error sit voluptatem accusantium doloremque laudantium, 
          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
@@ -119,20 +119,6 @@ var randomIndex=0;
 
 
 var tabPerfil = document.getElementById('tabPerfil');
-function aaaaa(){
-tabPerfil.onmouseover = function() {
-    tabPerfil.style.boxShadow = '0 0 10px '+ colors[randomIndex] ;
-    tabPerfil.style.border= colors[randomIndex]+' 1px solid';
-    //border-left: #787779 0px solid;
-
-    // Add any other style changes you want when hovering
-};
-}
-tabPerfil.onmouseout = function() {
-    tabPerfil.style.border= '#787779 1px solid';
-    //border-left: #787779 0px solid;
-    tabPerfil.style.boxShadow= '0 0 10px rgba(255, 255, 255, 0.8)';
-};
 
 
 //Retorna o gradiente aleatório
