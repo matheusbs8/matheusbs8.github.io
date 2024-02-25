@@ -47,6 +47,48 @@ document.addEventListener("DOMContentLoaded", function() {
         const element = keys[index];
         let randomColor = Math.floor(Math.random() * colors.length);
         element.style.boxShadow = '0px 0px 8px ' + colors[randomColor]+', '+ '0px 0px 3px #fff';
-        
+        element.innerHTML=element.innerHTML.toString().toLowerCase()
+        if (element.innerHTML.substring(0,1) != '<') {
+
+            element.onclick = function() {
+                document.getElementById("text-input").value += element.innerHTML
+            };
+        }
     }
 });
+
+let capsLock = false;
+
+function caps(){
+    let keys = document.getElementsByClassName('key');
+    for (let index = 0; index < keys.length; index++) {
+        const element = keys[index];
+        if (element.innerHTML.substring(0,1) != '<') {
+            if(capsLock)
+                element.innerHTML=element.innerHTML.toString().toLowerCase()
+            else
+                element.innerHTML=element.innerHTML.toString().toUpperCase()
+        }    
+    }
+    if (capsLock)
+        document.getElementById('circle').style.backgroundColor = 'crimson'
+    else
+        document.getElementById('circle').style.backgroundColor = 'green'
+    capsLock = !capsLock
+}
+
+function back(){
+    text = document.getElementById("text-input").value
+    tamanho = text.length
+    document.getElementById("text-input").value = text.substring(0,tamanho-1)
+
+}
+function space(){
+    document.getElementById("text-input").value+=' '
+}
+function enter(){
+    alert('a mensegem é: '+document.getElementById('text-input').value)
+}
+
+
+
